@@ -1,1 +1,3 @@
-# parser_filmix
+# Парсер для сайта Filmix.co
+
+Парсим список фильмов для другого проекта на Python/Django
