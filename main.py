@@ -87,7 +87,10 @@ def parser():
         #     get_html('https://filmix.co/drama/147988-ana-lyubit-2019.html')))
 
         pages_count = int(get_page_count(base_html))
+        print('Start parsing FILMIX.')
         for page in range(pages_count+1):
+            percentage= (page-pages_count)*100
+            print(f'parse page {page} of {pages_count}.....{percentage}%')
             links = get_links(get_html(URL_PAGE + f'{page}'))
             films = []
             for link in links:
